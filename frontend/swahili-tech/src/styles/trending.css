@@ -1,0 +1,55 @@
+:root {
+  --container-background: #f8f9fa; 
+  --term-wall-background: #ffffff;
+  --heading-background: #007bff; 
+  --heading-text-color: #ffffff; 
+  --paragraph-text-color: #343a40; 
+
+  /* Padding */
+  --padding-small: 0.5rem;
+  --padding-medium: 1rem;
+  --padding-large: 1.5rem;
+
+  /* Margin */
+  --margin-small: 0.5rem;
+  --margin-medium: 1rem;
+  --margin-large: 1.5rem;
+}
+
+button {
+  cursor: pointer;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+body {
+  line-height: 1.5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* trending starts */
+.trending-home {
+  background-color: var(--container-background);
+}
+.term-wall {
+  background-color: var(--term-wall-background);
+  padding: 10px;
+}
+.term-heading-trending {
+  color: var(--heading-background);
+}
+.term-paragraph {
+  color: var(--paragraph-text-color);
+}
+/* trending ends */

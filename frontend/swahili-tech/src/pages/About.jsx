@@ -1,6 +1,5 @@
 import React from "react";
 import "../index.css"
-import Footer from "./Footer";
 
 function About() {
   return (
@@ -42,7 +41,6 @@ function About() {
       Explore our dictionary to find definitions and examples of key terms, or use our search feature to quickly find the information you need. We're here to support you as you grow in your tech journey, making it easier to contribute to projects on GitHub and beyond.
       </p>
       </div>
-      <Footer />
     </div>
   );
 }

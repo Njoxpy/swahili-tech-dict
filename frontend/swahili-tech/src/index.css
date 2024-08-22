@@ -6,13 +6,13 @@
   --white-background: #ffffff;
 
   /* Text Colors */
-  --text-color: #343a40; /* Dark Gray */
-  --text-color-dark: #212529; /* Black */
+  --text-color: #343a40;
+  --text-color-dark: #212529;
 
   /* Accent Colors */
-  --accent-color-light: #66b2ff; /* Lighter Soft Blue */
-  --accent-color-teal: #20c997; /* Teal */
-  --accent-color-light-teal: #66d9b8; /* Lighter Teal */
+  --accent-color-light: #66b2ff;
+  --accent-color-teal: #20c997;
+  --accent-color-light-teal: #66d9b8;
 
   /* Button Colors */
   --button-color: var(--primary-color);
@@ -43,6 +43,16 @@
   --footer-text-color: #ffffff; /* White */
   --footer-link-color: #66b2ff; /* Lighter Blue */
   --footer-link-hover-color: #004080; /* Darker Blue */
+
+  /* Search Input Colors */
+  --search-input-background: #ffffff; /* White */
+  --search-input-border: #ced4da; /* Light Gray */
+  --search-input-text: #343a40; /* Dark Gray */
+
+  /* Search Button Colors */
+  --search-button-background: #007bff; /* Soft Blue */
+  --search-button-text: #ffffff; /* White */
+  --search-button-hover-background: #0056b3; /* Darker Blue */
 }
 
 button {
@@ -94,7 +104,9 @@ ul {
 /* about us page starts*/
 .about,
 .contact,
-.not-found {
+.not-found,
+.search,
+.trending-home {
   padding: 10px;
 }
 
@@ -103,6 +115,9 @@ ul {
 .started {
   border-left: 2px solid var(--navbar-background-color);
   padding-left: 10px;
+}
+.about-us-paragraph {
+  text-align: center;
 }
 
 /* about us page ends*/
@@ -148,7 +163,6 @@ textarea {
   cursor: pointer;
 }
 
-/* Input and Textarea Focus Styles */
 input:focus,
 textarea:focus {
   border-color: var(--focus-color);
@@ -180,6 +194,10 @@ button:focus {
 footer {
   background-color: var(--footer-background-color);
   color: var(--footer-text-color);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 7px;
 }
 .footer-link {
   color: var(--footer-link-color);
@@ -196,3 +214,37 @@ footer {
   text-align: center;
 }
 /* footer ends */
+
+/* search  starts*/
+.search-heading {
+  text-align: center;
+}
+.search-form {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-left: 400px;
+  display: flex;
+  align-items: center;
+}
+input[type="search"] {
+  background-color: var(--search-input-background);
+  border: 2px solid var(--search-input-border);
+  padding: 7px;
+  border-radius: 15px;
+}
+
+.search-btn {
+  background-color: var(--search-button-background);
+  color: var(--search-button-text);
+  border: none;
+  margin-left: 7px;
+  font-weight: bold;
+  padding: 7px;
+  border-radius: 15px;
+}
+.search-btn:hover {
+  background-color: var(--search-button-hover-background);
+  transition: all 0.4s;
+}
+
+/* search ends */

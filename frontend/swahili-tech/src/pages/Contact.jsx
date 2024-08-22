@@ -1,5 +1,4 @@
 import "../index.css";
-import Footer from "./Footer";
 
 function Contact() {
   return (
@@ -42,7 +41,6 @@ function Contact() {
           <button className="submit">Submit</button>
         </form>
       </div>
-      <Footer />
     </div>
   );
 }
