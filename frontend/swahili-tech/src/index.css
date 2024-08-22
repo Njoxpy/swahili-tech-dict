@@ -1,0 +1,198 @@
+:root {
+  --primary-color: #007bff;
+  --primary-color-hover: #0056b3;
+
+  --background-color: #f8f9fa;
+  --white-background: #ffffff;
+
+  /* Text Colors */
+  --text-color: #343a40; /* Dark Gray */
+  --text-color-dark: #212529; /* Black */
+
+  /* Accent Colors */
+  --accent-color-light: #66b2ff; /* Lighter Soft Blue */
+  --accent-color-teal: #20c997; /* Teal */
+  --accent-color-light-teal: #66d9b8; /* Lighter Teal */
+
+  /* Button Colors */
+  --button-color: var(--primary-color);
+  --button-hover-color: var(--primary-color-hover);
+
+  /* Link Colors */
+  --link-color: var(--primary-color);
+  --link-hover-color: var(--primary-color-hover);
+
+  --navbar-background-color: #0056b3; /* Darker Blue */
+  --navbar-text-color: #ffffff; /* White */
+  --navbar-link-color: #f8f9fa; /* Light Gray */
+  --navbar-link-hover-color: #d0e1ff; /* Lighter Blue */
+
+  /* Form Colors */
+  --border-color: #ced4da; /* Light Gray */
+  --input-background: #f8f9fa; /* Light Gray */
+  --primary-color: #007bff; /* Soft Blue */
+  --primary-color-hover: #0056b3; /* Darker Blue */
+  --text-color: #343a40; /* Dark Gray */
+  --white-background: #ffffff; /* White */
+  --error-color: #dc3545; /* Red */
+  /* Focus Colors */
+  --focus-color: #66b2ff; /* Lighter Blue for focus */
+  --focus-color-light: rgba(102, 178, 255, 0.3);
+  /* Footer Colors */
+  --footer-background-color: #343a40; /* Charcoal Gray or Dark Blue */
+  --footer-text-color: #ffffff; /* White */
+  --footer-link-color: #66b2ff; /* Lighter Blue */
+  --footer-link-hover-color: #004080; /* Darker Blue */
+}
+
+button {
+  cursor: pointer;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+body {
+  line-height: 1.5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* root layout starts */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--navbar-background-color);
+  color: var(--navbar-text-color);
+}
+
+.nav-item,
+.logo {
+  color: var(--navbar-text-color);
+}
+.nav-item:hover {
+  transition: all 0.4s;
+  color: var(--navbar-link-hover-color);
+}
+ul {
+  display: flex;
+  gap: 20px;
+}
+/* root layout ends */
+
+/* about us page starts*/
+.about,
+.contact,
+.not-found {
+  padding: 10px;
+}
+
+.about-info,
+.why,
+.started {
+  border-left: 2px solid var(--navbar-background-color);
+  padding-left: 10px;
+}
+
+/* about us page ends*/
+h3 {
+  color: var(--text-color);
+  text-transform: capitalize;
+  margin: 5px;
+}
+
+/* contact page starts */
+.name,
+.email,
+.message {
+  display: block;
+  margin: 5px;
+}
+
+.form {
+  color: var(--text-color);
+  max-width: 300px;
+  outline: none;
+}
+
+.error {
+  color: var(--error-color);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 7px;
+  border: 2px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--input-background);
+}
+.submit {
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--navbar-text-color);
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Input and Textarea Focus Styles */
+input:focus,
+textarea:focus {
+  border-color: var(--focus-color);
+  box-shadow: 0 0 0 2px var(--focus-color-light);
+  outline: none;
+}
+
+button:focus {
+  box-shadow: 0 0 0 2px var(--focus-color-light);
+  outline: none;
+}
+
+/* contact page ends */
+
+/* not found starts */
+.not-found-link {
+  font-weight: bold;
+}
+
+.not-found-heading {
+  margin-bottom: 5px;
+}
+.not-found-paragraph {
+  text-transform: capitalize;
+}
+/* not found ends */
+
+/* footer starts */
+footer {
+  background-color: var(--footer-background-color);
+  color: var(--footer-text-color);
+}
+.footer-link {
+  color: var(--footer-link-color);
+  padding: 5px;
+}
+.footer-link:hover {
+  color: var(--footer-link-hover-color);
+  transition: all 0.4s;
+}
+.links {
+  text-align: center;
+}
+.footer-copyright {
+  text-align: center;
+}
+/* footer ends */
