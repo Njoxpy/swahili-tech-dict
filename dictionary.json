@@ -1,0 +1,28 @@
+{
+    "dictionary": [
+        {
+            "word": "Localization",
+            "definition": "Localization, often abbreviated as l10n, is the process of adapting software or digital content to meet the language, cultural, and other requirements of a specific target market or locale. This involves translating text, adjusting date and time formats, modifying user interface layouts, and more to ensure that the content is appropriate and accessible to users in different regions.",
+            "examples": [
+                "When contributing to a GitHub project, understanding localization is crucial for making sure that the software can be easily used by people around the world.",
+                "Localization ensures that software can be adapted for different languages and regional formats."
+            ]
+        },
+        {
+            "word": "Internationalization",
+            "definition": "Internationalization, often abbreviated as i18n, is the process of designing and developing software so that it can be easily adapted to various languages and regions without requiring engineering changes to the source code. It involves creating a flexible structure that supports multiple languages and cultural conventions.",
+            "examples": [
+                "Internationalization is typically done before localization to ensure that the software can be adapted to different languages.",
+                "Proper internationalization allows a single codebase to support multiple languages and regions."
+            ]
+        },
+        {
+            "word": "Translation Memory",
+            "definition": "Translation Memory (TM) is a database that stores previously translated text segments, such as sentences or phrases, to aid in the translation of new content. By reusing existing translations, TM improves consistency and efficiency in the translation process.",
+            "examples": [
+                "Translation Memory helps translators by providing previously translated segments, reducing the time and cost of translation.",
+                "Using Translation Memory can help maintain consistency across different translations of the same software."
+            ]
+        }
+    ]
+}
