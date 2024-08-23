@@ -8,6 +8,7 @@ function Search() {
           name="term"
           id="term"
           placeholder="search terminology"
+          autoFocus
         />
         <button className="search-btn">Search</button>
       </form>

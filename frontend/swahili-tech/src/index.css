@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --primary-color: #007bff;
   --primary-color-hover: #0056b3;
@@ -106,7 +109,8 @@ ul {
 .contact,
 .not-found,
 .search,
-.trending-home {
+.trending-home,
+.contribute-section {
   padding: 10px;
 }
 
@@ -161,6 +165,7 @@ textarea {
   font-weight: bold;
   border-radius: 4px;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 input:focus,
@@ -194,9 +199,9 @@ button:focus {
 footer {
   background-color: var(--footer-background-color);
   color: var(--footer-text-color);
-  position: fixed;
+  /* position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 100%; */
   padding: 7px;
 }
 .footer-link {
@@ -225,12 +230,20 @@ footer {
   margin-left: 400px;
   display: flex;
   align-items: center;
+  padding: 10px;
 }
 input[type="search"] {
   background-color: var(--search-input-background);
   border: 2px solid var(--search-input-border);
   padding: 7px;
   border-radius: 15px;
+  width: 100%;
+}
+
+input[type="search"]:focus {
+  border-color: var(--focus-color);
+  box-shadow: 0 0 0 2px var(--focus-color-light);
+  outline: none;
 }
 
 .search-btn {

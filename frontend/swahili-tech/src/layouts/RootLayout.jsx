@@ -21,6 +21,9 @@ function RootLayout() {
             <li>
               <Link to="/contact" className="nav-item">Contact</Link>
             </li>
+            <li>
+              <Link to="/contribute" className="nav-item">Contribute</Link>
+            </li>
           </ul>
         </nav>
       </header>

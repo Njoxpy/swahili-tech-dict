@@ -11,14 +11,14 @@ function Footer() {
           internationalization. Our goal is to provide clear and concise
           definitions to support developers and contributors in their projects.
         </p>
-        <h4 className="footer-copyright">
-          © 2024 TechDict. All rights reserved.
-        </h4>
         <div className="links">
           <Link to="/" className="footer-link">Home</Link>
           <Link to="/about" className="footer-link">About</Link>
           <Link to="/contact" className="footer-link">Contact Us</Link>
         </div>
+        <h4 className="footer-copyright">
+          © 2024 TechDict. All rights reserved.
+        </h4>
       </footer>
     </div>
   );

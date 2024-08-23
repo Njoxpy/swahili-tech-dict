@@ -1,9 +1,9 @@
 :root {
-  --container-background: #f8f9fa; 
+  --container-background: #f8f9fa;
   --term-wall-background: #ffffff;
-  --heading-background: #007bff; 
-  --heading-text-color: #ffffff; 
-  --paragraph-text-color: #343a40; 
+  --heading-background: #007bff;
+  --heading-text-color: #ffffff;
+  --paragraph-text-color: #343a40;
 
   /* Padding */
   --padding-small: 0.5rem;
@@ -48,6 +48,7 @@ body {
 }
 .term-heading-trending {
   color: var(--heading-background);
+  margin-top: 10px;
 }
 .term-paragraph {
   color: var(--paragraph-text-color);
