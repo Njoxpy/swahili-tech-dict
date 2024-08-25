@@ -19,6 +19,7 @@ import Search from "./pages/Search";
 import SearchDetails from "./pages/SearchDetails";
 import Contribute from "./pages/Contribute";
 import Help from "./pages/Help";
+import TermsAvailable from "./fetch";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -28,6 +29,8 @@ const router = createBrowserRouter(
       <Route path="/contact" element={<Contact />} />
       <Route path="/help" element={<Help />} />
       <Route path="/contribute" element={<Contribute />} />
+      {/* dictionary */}
+      <Route path="/termsavailable" element={<TermsAvailable />}/>
       <Route path="*" element={<Notfound />} />
       <Route path="/terms" element={<WordDetailsLayouts />}>
         <Route index element={<Word />} />
